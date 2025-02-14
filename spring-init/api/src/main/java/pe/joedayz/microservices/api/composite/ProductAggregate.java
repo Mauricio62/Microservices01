@@ -1,11 +1,8 @@
 package pe.joedayz.microservices.api.composite;
 
-import pe.joedayz.microservices.api.core.recommendation.Recommendation;
-import pe.joedayz.microservices.api.core.review.Review;
-
 import java.util.List;
 
-public class productAggregate {
+public class ProductAggregate {
     private final int productId;
     private final String name;
     private final int weight;
@@ -13,7 +10,7 @@ public class productAggregate {
     private final List<ReviewSummary> reviews;
     private final ServiceAddresses serviceAddresses;
 
-    public productAggregate(ServiceAddresses serviceAddresses, List<ReviewSummary> reviews, List<RecommendationSummary> recommendations, int weight, String name, int productId) {
+    public ProductAggregate(int productId, String name, int weight, List<RecommendationSummary> recommendations, List<ReviewSummary> reviews, ServiceAddresses serviceAddresses) {
         this.serviceAddresses = serviceAddresses;
         this.reviews = reviews;
         this.recommendations = recommendations;

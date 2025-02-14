@@ -8,5 +8,5 @@ public interface ProductCompositeService {
             value = "/product-composite/{productId}",
             produces = "application/json"
     )
-    productAggregate getProduct(@PathVariable int productId);
+    ProductAggregate getProduct(@PathVariable int productId);
 }
