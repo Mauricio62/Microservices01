@@ -1,0 +1,6 @@
+spring.application.name=product-service
+server-port=7001
+server.error.include-message=always
+
+logging.level.root=INFO
+logging.level.pe.joedayz=DEBUG
