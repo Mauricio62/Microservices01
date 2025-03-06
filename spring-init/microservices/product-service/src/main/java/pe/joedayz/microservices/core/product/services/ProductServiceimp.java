@@ -2,6 +2,7 @@ package pe.joedayz.microservices.core.product.services;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
 import pe.joedayz.microservices.api.core.product.Product;
 import pe.joedayz.microservices.api.core.product.ProductService;
@@ -16,6 +17,7 @@ public class ProductServiceimp implements ProductService {
     private static final Logger LOG = LoggerFactory.getLogger(ProductServiceimp.class);
 
     private final ServiceUtil  serviceUtil;
+
 
     public ProductServiceimp(ServiceUtil serviceUtil) {
         this.serviceUtil = serviceUtil;
